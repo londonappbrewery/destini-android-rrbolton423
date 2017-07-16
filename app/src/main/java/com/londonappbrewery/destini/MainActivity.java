@@ -40,25 +40,25 @@ public class MainActivity extends AppCompatActivity {
         mButtonTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mStoryIndex == 1) { // If the top button was clicked first
+                if (mStoryIndex == 1) { // If the top button was clicked first ...
                     // Show the 3rd story
                     mStoryTextView.setText(R.string.T3_Story);
                     mButtonTop.setText(R.string.T3_Ans1);
                     mButtonBottom.setText(R.string.T3_Ans2);
                     mStoryIndex = 2; // Change the index so that either the bottom button or top button can react after it
-                } else if (mStoryIndex == 2) { // If the top button was clicked 2 times in a row
+                } else if (mStoryIndex == 2) { // If the top button was clicked 2 times in a row ...
                     // Show the 6th ending
                     mStoryTextView.setText(R.string.T6_End);
                     mButtonTop.setVisibility(View.GONE);
                     mButtonBottom.setVisibility(View.GONE);
                     // GAME OVER
-                } else if (mStoryIndex == 3) { // If the top button was clicked after the bottom button was clicked
+                } else if (mStoryIndex == 3) { // If the top button was clicked after the bottom button was clicked ...
                     // Show the 3rd story
                     mStoryTextView.setText(R.string.T3_Story);
                     mButtonTop.setText(R.string.T3_Ans1);
                     mButtonBottom.setText(R.string.T3_Ans2);
                     mStoryIndex = 4; // Change the index so that either the bottom button or top button can react after it
-                } else if (mStoryIndex == 4) { // If the top button was clicked after the bottom button, and the top button
+                } else if (mStoryIndex == 4) { // If the top button was clicked after the bottom button, and after the top button was clicked ...
                     // Show the 6th ending
                     mStoryTextView.setText(R.string.T6_End);
                     mButtonTop.setVisibility(View.GONE);
@@ -74,25 +74,25 @@ public class MainActivity extends AppCompatActivity {
         mButtonBottom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (mStoryIndex == 1) { // If the bottom button is the first button clicked
-                    // show the 2nd story
+                if (mStoryIndex == 1) { // If the bottom button is the first button clicked ...
+                    // Show the 2nd story
                     mStoryTextView.setText(R.string.T2_Story);
                     mButtonTop.setText(R.string.T2_Ans1);
                     mButtonBottom.setText(R.string.T2_Ans2);
                     mStoryIndex = 3; // Change the index so that either the bottom button or top button can react after it
-                } else if (mStoryIndex == 3) { // If the bottom button is clicked 2 times in a row
+                } else if (mStoryIndex == 3) { // If the bottom button is clicked 2 times in a row ...
                     // Show the 4th ending
                     mStoryTextView.setText(R.string.T4_End);
                     mButtonTop.setVisibility(View.GONE);
                     mButtonBottom.setVisibility(View.GONE);
                     // GAME OVER
-                } else if (mStoryIndex == 2) { // If the bottom button is clicked after the top button was clicked
+                } else if (mStoryIndex == 2) { // If the bottom button is clicked after the top button was clicked ...
                     // Show the 5th ending
                     mStoryTextView.setText(R.string.T5_End);
                     mButtonTop.setVisibility(View.GONE);
                     mButtonBottom.setVisibility(View.GONE);
                     // GAME OVER
-                } else if (mStoryIndex == 4) { // If the bottom button is clicked after the bottom button, and the top button was clicked
+                } else if (mStoryIndex == 4) { // If the bottom button is clicked after the bottom button, and after the top button was clicked ...
                     // Show the 5th ending
                     mStoryTextView.setText(R.string.T5_End);
                     mButtonTop.setVisibility(View.GONE);
